@@ -1,0 +1,5 @@
+/* ------- add star wars custom font */
+@font-face {
+    font-family: "StarWarsFont";
+    src: url("../fonts/star_jedi/starjedi/Starjedi.ttf");
+}
