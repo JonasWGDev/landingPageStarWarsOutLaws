@@ -17,7 +17,7 @@ function changeBg() {
     }
 
     bgSection.style.backgroundImage = `
-    url("../img/background-${currentImg.toString()}.jpg")
+    url("/src/img/background-${currentImg}.jpg")
     `;
 }
 

@@ -1,0 +1,187 @@
+/* add star wars custom font */
+
+
+:root {
+    /* variables */
+    --bg-white-color: #fff;
+    --highlight-yallow-color: #E1A263;
+    --highlight-yallow-color-hover: #d68737;
+    --padding-defaut-horizontal: 2%;
+    --txt-black-color: #000000;
+    --txt-white-black-hover: #2b2b2b;
+    --btn-buy-now-border-radios: 7px;
+    --txt-white-color: #fff;
+    --bg-color-fade-start: #2D2D2D;
+    --bg--color-fade-end: #2D2D2D00;
+}
+
+/* header - style start */
+header {
+    width: 100%;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-white-color);
+    padding: 7px var(--padding-defaut-horizontal);
+}
+
+.logo {
+    width: 15%;
+    height: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav ul {
+    gap: 0 25px;
+    align-items: center;
+}
+
+.nav .buy-now a {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    bottom: -3px;
+    color: var(--txt-black-color);
+    transform: scaleY(150%);
+}
+
+.nav a {
+    font-size: 1.5em;
+    color: #000;
+}
+
+/* .nav a:hover {
+    color: var(--highlight-yallow-color-hover);
+} */
+
+.nav .buy-now {
+    position: relative;
+    border-radius: var(--btn-buy-now-border-radios);
+    justify-content: center;
+    width: 215px;
+    height: 30px;
+    border: 2px solid #000000;
+    border-bottom: none;
+    transition: border 0.2s;
+    /* background-color: aqua; */
+}
+
+.buy-now:hover {
+    color: var(--highlight-yallow-color);
+    border-color: var(--highlight-yallow-color);
+    transition: border 0.2s;
+}
+
+/* header - style end */
+
+/* main - style start */
+main {
+    width: 100%;
+}
+
+/* main - style end */
+
+/* main/backgrounds - style start */
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    background-image: url("../img/background-1.jpg");
+    background-size: cover;
+
+}
+
+.background::after {
+    content: "";
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(46, 46, 46, 0.836) 50%, rgba(46, 46, 46, 0) 100%);
+}
+
+/* main/backgrounds - style end */
+
+/* call-attention - style start */
+.call-attention {
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 100px 2%;
+}
+
+.call-attention h1 {
+    font-family: "StarWarsFont";
+    font-size: 3.5em;
+    width: 80%;
+    color: #E1A263;
+}
+
+.call-attention p {
+    width: 60%;
+    color: #fff;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+/* call-attention - style end */
+
+/* img characters - style start */
+.img-characters img {
+    width: 400px;
+}
+
+.img-characters {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+/* img characters - style end */
+
+/* buy now page - style start */
+.store-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.store-links h1 {
+    font-size: 2.5em;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 0 20px 0 20px;
+    font-family: "StarWarsFont";
+}
+
+.store-links .links a {
+    margin: 20px 10px;
+}
+
+.store-links .links svg {
+    width: 70px;
+    height: fit-content;
+}
+
+.store-links .links svg path {
+    fill: #E1A263;
+}
+
+/* buy now page - style end */

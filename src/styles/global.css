@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "StarWarsFont";
+    src: url("../fonts/star_jedi/starjedi/Starjedi.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +15,23 @@
     font-size: 62.5%;
 }
 
+.nav a {
+    font-family: StarWarsFont;
+    letter-spacing: 2px;
+}
+
 /* add display flex this tags */
 header,
 ul,
-li {
+li,
+.call-attention,
+.store-links,
+.links {
     display: flex;
 }
 
 header,
-ul,
-li {
+ul {
     width: 100%;
 }
 
