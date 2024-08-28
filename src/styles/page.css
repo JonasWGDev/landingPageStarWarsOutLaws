@@ -71,8 +71,8 @@ header {
     /* background-color: aqua; */
 }
 
-.buy-now:hover {
-    color: var(--highlight-yallow-color);
+.nav .buy-now:hover {
+    color: #E1A263;
     border-color: var(--highlight-yallow-color);
     transition: border 0.2s;
 }
@@ -183,5 +183,21 @@ main {
 .store-links .links svg path {
     fill: #E1A263;
 }
+
+/* footer - style start */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+footer h1 {
+    font-size: 1.5em;
+}
+
+/* footer - style end */
 
 /* buy now page - style end */

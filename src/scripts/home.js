@@ -21,7 +21,6 @@ function changeBg() {
     `;
 }
 
-
 // calling changeBg function
 setInterval(() => {
     changeBg();
